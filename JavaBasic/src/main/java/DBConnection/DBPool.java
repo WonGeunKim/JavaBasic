@@ -24,8 +24,16 @@ public class DBPool {
 			
 			// 커넥션 풀 (DataSource) 얻기
 			Context initCtx = new InitialContext();
+			
 			Context ctx = (Context) initCtx.lookup("java:comp/env");
+			// "java:comp/env/" 까지는 고정이고 그 뒤는 context.xml 파일에 기입할 정보 중 name 값을 넣어주면 된다 
+			
+			// Context 객체에서 메소드를 통해 Object 타입으로 반환 받은 뒤 타입 캐스팅을 통해 변환
+			// => Object 타입으로 받는 이유 : 외부 리소스 종류에 따라 관리하는 클래스가 달라질 수 있기 때문
+			
+			
 			DataSource source = (DataSource) ctx.lookup("dbcp_myoracle");
+			// DataSource는 DB Driver 연결, Connection 객체를 관리하는 역할을 하는 인터페이스
 			
 			// 커넥션 풀을 통해 연결
 			conn = source.getConnection();
