@@ -38,8 +38,5 @@ public class PrintStreamEx {
 				e2.printStackTrace();
 			}
 		}
-		
-		
 	}
-
 }
