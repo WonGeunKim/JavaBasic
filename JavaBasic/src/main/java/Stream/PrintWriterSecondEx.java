@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 
 public class PrintWriterSecondEx {
 
+	// PrintWriter의 생성자 중 매개변수가 OupputStream인 경우
+	
 	public static void main(String[] args) {
 		
 		PrintWriter pw = null;
@@ -17,7 +19,7 @@ public class PrintWriterSecondEx {
 			
 			fos = new FileOutputStream("c:\\Test\\printWriterSecond.txt");
 			bos = new BufferedOutputStream(fos);
-			pw = new PrintWriter(bos, true);
+			pw = new PrintWriter(bos, true);	// true의 의미는 자동 플러시 기능
 			pw.println("안녕하세요!!");
 			pw.println("또 만났네요.");
 			pw.println(100.1);
