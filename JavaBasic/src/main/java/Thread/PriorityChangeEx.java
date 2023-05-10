@@ -11,7 +11,6 @@ class SuperThreadPriority extends Thread {
 	}
 }
 
-
 public class PriorityChangeEx extends SuperThreadPriority {
 
 	public PriorityChangeEx(String threadName) {
