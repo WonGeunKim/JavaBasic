@@ -45,9 +45,6 @@ class ATM implements Runnable {
 	
 }
 
-
-
-
 public class SynchronizedEx {
 
 	public static void main(String[] args) {
