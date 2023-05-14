@@ -44,7 +44,6 @@ class ATMTwo implements Runnable {
 	public long getDepositeMoney() {
 		return depositeMoney;
 	}
-	
 }
 
 public class WaitNotifyEx {
@@ -58,5 +57,4 @@ public class WaitNotifyEx {
 		son.start();
 		
 	}
-
 }
