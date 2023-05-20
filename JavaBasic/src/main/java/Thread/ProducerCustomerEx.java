@@ -18,5 +18,4 @@ public class ProducerCustomerEx {
 		tCustomer.start();
 		
 	}
-
 }
